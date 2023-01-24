@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+//Dashboard
+import { HomeComponent } from './pages/home/home.component';
+
+
+const routes: Routes = [
+    { path: "", component: HomeComponent }
+];
+
+@NgModule({
+//para rotas filhas, utilizaar forChild
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class DashboardRoutingModule { }

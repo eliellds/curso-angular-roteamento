@@ -4,9 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//Pages
+import { HomeComponent } from './pages/home/home.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { MenuComponent } from './shared/menu/menu.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SobreComponent,
+    PageNotFoundComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
